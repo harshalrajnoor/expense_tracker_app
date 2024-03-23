@@ -4,8 +4,10 @@ import 'package:expense_tracker_app/widgets/expenses.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: SafeArea(child: Expenses()),
+    MaterialApp(
+      debugShowCheckedModeBanner: true,
+      theme: ThemeData(useMaterial3: true),
+      home: const Expenses(),
     ),
   );
 }
